@@ -20,11 +20,11 @@ div {
     display:table;
 }
 #top {
-    width:100%;
-    min-height:25px;
-    text-align:right;
-    font-weight:bold;
-    background-color: #006600;
+    width: 100%;
+    min-height: 25px;
+    text-align: right;
+    font-weight: bold;
+    background-color: #FF5625;
 }
     #top input{
         margin-top:3px;
@@ -44,28 +44,28 @@ div {
         margin: 0 5px;
     }
         #top a:hover {
-            color:#ffae00;
+            color: #FF5625;
         }
 #logo-search {
     width: 100%;
-    min-height: 66px;
-    padding: 0 0 0 0;
+    min-height: 50px;
+    height: 140px;
+    /*padding: 0 0 0 0;*/
     background-image: url('/image/banner.png');
+    background-repeat: no-repeat;
+    background-position: 0 -20px;
 }
     #logo-search #logo {
-        img
-{
-    float: left;
-    /*padding-top: 0;*/
-    padding: 0 0 0 0;
-    width: 250px;
-    height: 100px; //*dsdsdsf*/
-    position: relative;
-   
-}
-        
-        
-}
+        float: left;
+        padding-top: 0px;
+        width: 251px;
+        height: 71px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        margin-top: 0.5px;
+    }
+
     #logo-search #search {
         float: right;
         text-align: center;
@@ -83,12 +83,12 @@ div {
     width: 400px;
     position: relative;
     border: solid 1px #00918d;
-    top: 75px;
-    left: -460px;
+    top: 85px;
+    left: -165px;
     right: -3px;
 }
 #logo-search #search #btnSearch {
-    margin: 55px 0 0 -200px;
+    margin: 65px 30px 0px 90px;
     position: absolute;
 }
 #menu {
@@ -143,7 +143,7 @@ div {
   box-shadow: 0 4px 2px 1px #000;
 }
 #footer {
-  height: 350px;
+  height: 200px;
   background: #4d7b30;
   min-width: 992px;
 }
