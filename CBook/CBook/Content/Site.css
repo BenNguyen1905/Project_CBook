@@ -189,7 +189,9 @@ div {
   min-width: 450px;
   width: 39%;
   float: left;
+  color: black;
 }
 .slinks {
-  padding-left: 14%;
+    
+    padding-left: 14%;
 }
