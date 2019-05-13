@@ -147,51 +147,77 @@ div {
   box-shadow: 0 4px 2px 1px #000;
 }
 #footer {
-  height: 200px;
-  background: #4d7b30;
-  min-width: 992px;
+    /*height: 200px;
+    background: #4d7b30;
+    min-width: 992px;
+    width: 76%;
+    margin-top: 0px;
+    margin-left: 91px;*/
+    /*width: 964px;
+    min-height: 117px;
+    background: #4d7b30;
+    min-width: 118px;
+    margin-left: 255px;
+    height: 200px;*/
+    width: 1020px;
+    
+    min-height: 50px;
+    min-width: 118px;
+    height: 130px;
+    /*padding: 0 0 0 0;*/
+    background: #4d7b30;
+    margin-left: 545px;
+    background-repeat: no-repeat;
 }
-#footerItems {
+    /*#footerItems {
   min-width: 992px;
   width: 100%;
   padding: 0px 6%;
   min-width: 992px;
-}
-#footerItems div {
-  display: inline-block;
-  color: #FFF;
-  padding-top: 2%;
-  font-weight: bold;
-  font-size: 16px;
-}
-.accountPos {
+}*/
+    /*#footerItems div {
+        display: inline-block;
+        color: #FFF;
+        padding-top: 0%;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 25px;
+        float: left;
+    }*/
+/*.accountPos {
   padding-left: 3%;
 }
-#footerItems div ul {
-  padding-left: 0;
+#accountPos div ul {
+    padding-left: 0;
 }
-#footerItems div ul li {
-  list-style-type: none;
-  font-weight: 400;
-  font-size: 13px;
-  font-style: italic;
-}
-#videoptions {
+    #accountPos div ul li {
+        list-style-type: none;
+        font-weight: 400;
+        font-size: 13px;
+        font-style: italic;
+    }*/
+/*#videoptions {
   height: 74px;
   width: 23px;
   background-color: #4c5053;
-}
-#footerItems div video {
+}*/
+/*#footerItems div video {
   min-width: 35px;
   min-height: 30px;
-}
-.socialinks {
-  min-width: 450px;
-  width: 39%;
-  float: left;
-  color: black;
-}
-.slinks {
+}*/
+    #footer #accountPos {
+        /*min-width: 450px;
+        width: 39%;
+        float: left;
+        color: black;*/
+        /*top: 3px;
+        left: 138px;
+        right: 8px;
+        bottom: 81px;*/
+        margin-left: 350px;
+        
+    }
+/*.slinks {
     
-    padding-left: 14%;
-}
+  padding-left: 14%;
+}*/
