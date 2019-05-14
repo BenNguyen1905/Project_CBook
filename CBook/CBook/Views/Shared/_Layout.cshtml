@@ -47,8 +47,7 @@
     </style>
 </head>
 <body>
-    <div>
-
+    @*<div>*@
         <div class="main">
             <div id="top">
                 <uc1:top ID="top1" />
@@ -97,11 +96,11 @@
                 </div>
                 &nbsp;
             </div>
-            <div id="content">
+            @*<div id="content">
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
 
                 </asp:ContentPlaceHolder>
-            </div>
+            </div>*@
         </div>
     <div id="footer">
         <div class="container">
@@ -113,7 +112,10 @@
         </div>
     </div>
 
-    @RenderBody()
+    <div class="container body-content">
+        @RenderBody()
+        
     </div>
+    @*</div>*@
 </body>
 </html>

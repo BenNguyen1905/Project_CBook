@@ -156,3 +156,7 @@ div {
     color: white;
     text-align: center;
 }
+.body-content {
+    padding-left: 400px;
+    padding-right: 15px;
+}
