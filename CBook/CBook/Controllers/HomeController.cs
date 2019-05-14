@@ -8,7 +8,7 @@ namespace CBook.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Default()
         {
             return View();
         }

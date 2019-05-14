@@ -96,26 +96,28 @@
                 </div>
                 &nbsp;
             </div>
-            @*<div id="content">
-                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <div id="content">
+                @*<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
 
-                </asp:ContentPlaceHolder>
-            </div>*@
+        </asp:ContentPlaceHolder>*@
+                @RenderBody()
+                <div id="footer">
+                    <div class="container">
+                        <p>CBook Co, Ltd. &copy; 2019</p>
+                    </div>
+                    <div class="socialinks">
+                        <a href="https://www.facebook.com/Nam.thanh.1905" target="_blank"><img src="../image/facebook-logo.png" style="width:40px; height:40px; " alt="facebook"></a>
+                        <a href="mailto:thien.t176615@vanlanguni.vn" target="_blank"><img src="../image/mail-logo.png" style="width:40px; height:40px; padding-left: 8px;" alt="mail"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    <div id="footer">
-        <div class="container">
-            <p>CBook Co, Ltd. &copy; 2019</p>
-        </div>
-        <div class="socialinks">
-            <a href="https://www.facebook.com/Nam.thanh.1905" target="_blank"><img src="../image/facebook-logo.png" style="width:40px; height:40px; " alt="facebook"></a>
-            <a href="mailto:thien.t176615@vanlanguni.vn" target="_blank"><img src="../image/mail-logo.png" style="width:40px; height:40px; padding-left: 8px;" alt="mail"></a>
-        </div>
-    </div>
+   
 
-    <div class="container body-content">
-        @RenderBody()
-        
-    </div>
+        @*<div class="container body-content">
+            
+            
+        </div>*@
     @*</div>*@
 </body>
 </html>
