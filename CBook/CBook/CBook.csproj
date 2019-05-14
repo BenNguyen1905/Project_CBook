@@ -148,6 +148,7 @@
     <Content Include="image\cart_white.png" />
     <Content Include="image\cssssssssssss.gif" />
     <Content Include="image\facebook-icon.png" />
+    <Content Include="image\facebook-logo.png" />
     <Content Include="image\fb.png" />
     <Content Include="image\gg.png" />
     <Content Include="image\giaohangtannoi.jpg" />
@@ -183,6 +184,7 @@
     <Content Include="image\hang\64201713836604.jpg" />
     <Content Include="image\huongdanmuahang.jpg" />
     <Content Include="image\logo.png" />
+    <Content Include="image\mail-logo.png" />
     <Content Include="image\Refresh.png" />
     <Content Include="image\search.png" />
     <Content Include="image\slider\01.png" />
@@ -292,5 +294,5 @@
     </ItemGroup>
     <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
     <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
-</Target>
+  </Target>
 </Project>
