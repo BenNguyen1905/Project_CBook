@@ -233,6 +233,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Default.cshtml" />
+    <Content Include="Views\Home\top.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -12,6 +12,10 @@ namespace CBook.Controllers
         {
             return View();
         }
+        //public ActionResult top()
+        //{
+        //    return View();
+        //}
 
         public ActionResult About()
         {
