@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -59,17 +60,17 @@
         <div id="logo-search">
 
             <div id="search">
-                <input type="text" id="txtSearch" name="txtSearch" size="30" placeholder="Nhập từ khóa cần tìm" />
-                <input type="image" name="btnSearch" id="btnSearch" src="~/image/search.png" height="15" width="15" />
+                @using (Html.BeginForm("KetQuaTimKiem", "TimKiem"))
+                {
+                        <input type="text" id="txtSearch" name="txtSearch" size="30" placeholder="Nhập từ khóa cần tìm" />
+                        <button type="submit" name="btnSearch" id="btnSearch"><img src="~/image/search.png" height="15" width="15" /> </button> 
+                }
+
             </div>
             <div id="logo">
                 <img src="~/image/logo.png" alt="logoCbook" height="140" width="250" />
 
             </div>
-
-
-
-
         </div>
 
         <div id="menu" style="background-color:#006600; height:40px;">

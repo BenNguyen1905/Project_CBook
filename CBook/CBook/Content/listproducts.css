@@ -46,10 +46,9 @@
         padding:5px;
     }
     .view .detail .gia {
-        bottom:10%; 
-        position:absolute; 
+        bottom:10%;
         text-align:center; 
-        width:100%;
+        /*width:100%;*/
     }
     .view div.hinh img {
         height: 90px;

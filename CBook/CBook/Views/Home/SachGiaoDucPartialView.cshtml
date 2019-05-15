@@ -1,0 +1,59 @@
+﻿@using CBook.Models;
+@model List<Hang>
+
+@*@{
+        foreach (var item in Model)
+        {
+            <div class="auto-style1">
+                <a href="Detail.aspx?dm=1"><strong><span class="auto-style2">Sách Giáo Dục</span></strong></a>
+            </div>
+            <div ID="DataList1" runat="server" BorderColor="white" GridLines="Both" RepeatColumns="5" RepeatDirection="Horizontal" Width="1000px">
+                <ItemTemplate>
+                    <div class="view">
+                        <div class="detail">
+                            <div class="hinh"><img src='<%#Eval("HinhAnh") %>' /></div>
+                            <div class="ten"><p>@item.TenHang</p></div>
+                            <div class="gia"><%#String.Format("{0:0,0}",Eval("DonGia")) + " đ"%></div>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </div>
+        }
+    }*@
+
+<div class="auto-style1">
+    <a href="Detail.aspx?dm=1"><strong><span class="auto-style2">Sách Giáo Dục</span></strong></a>
+</div>
+@foreach (var item in Model)
+{
+    <div ID="DataList1" runat="server" BorderColor="white" GridLines="Both" RepeatColumns="5" RepeatDirection="Horizontal" Width="1000px">
+        <ItemTemplate>
+
+            <div class="view">
+                <div class="detail" RepeatDirection="Horizontal">
+                    <div class="hinh"><p><img src="@item.HinhAnh"</p></div>
+                    <div class="ten"><p>@item.TenHang</p></div>
+                    <div class="gia"><p>@item.DonGia</p></div>
+                </div>
+            </div>
+
+        </ItemTemplate>
+    </div>
+}
+
+@foreach (var item in Model)
+{
+    <div ID="DataList1" runat="server" BorderColor="white" GridLines="Both" RepeatColumns="5" RepeatDirection="Horizontal" Width="1000px">
+            <ItemTemplate>
+
+                <div class="view">
+                    <div class="detail" RepeatDirection="Horizontal">
+                        <div class="hinh"><p><img src="@item.HinhAnh"</p></div>
+                        <div class="ten"><p>@item.TenHang</p></div>
+                        <div class="gia"><p>@item.DonGia</p></div>
+                    </div>
+                </div>
+
+            </ItemTemplate>
+        </div>
+}

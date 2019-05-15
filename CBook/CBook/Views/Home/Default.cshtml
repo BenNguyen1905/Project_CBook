@@ -61,22 +61,7 @@
 </content>
 <content id="Content2">
     <div class="listproduct">
-        <div class="auto-style1">
-            <a href="Detail.aspx?dm=1"><strong><span class="auto-style2">Sách Giáo Dục</span></strong></a>
-        </div>
-        <div ID="DataList1" runat="server" BorderColor="white" GridLines="Both" RepeatColumns="5" RepeatDirection="Horizontal" Width="1000px">
-            <ItemTemplate>
-                <div class="view">
-                    <a href='Product.aspx?id=<%#Eval("MaHang") %>'>
-                        <div class="detail">
-                            <div class="hinh"><img src='<%#Eval("HinhAnh") %>' /></div>
-                            <div class="ten"><%#Eval("TenHang") %></div>
-                            <div class="gia"><%#String.Format("{0:0,0}",Eval("DonGia")) + " đ"%></div>
-                        </div>
-                    </a>
-                </div>
-            </ItemTemplate>
-        </div>
+        @Html.Action("SachGiaoDucPartialView", "Home")
     </div>
 
     <div class="listproduct">
@@ -88,8 +73,8 @@
                 <div class="view">
                     <a href='Product.aspx?id=<%#Eval("MaHang") %>'>
                         <div class="detail">
-                            <div class="hinh"><img src='<%#Eval("HinhAnh") %>' /></div>
-                            <div class="ten"><%#Eval("TenHang") %></div>
+                            <div class="hinh"></div>
+                            <div class="ten"><p>abc</p></div>
                             <div class="gia"><%#String.Format("{0:0,0}",Eval("DonGia")) + " đ"%></div>
                         </div>
                     </a>

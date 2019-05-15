@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CBook.Models;
 
 namespace CBook.Controllers
 {
     public class HomeController : Controller
     {
+        Cbook_DatabaseEntities db = new Cbook_DatabaseEntities();
+        Hang Hang = new Hang();
         public ActionResult Default()
         {
             return View();
@@ -29,6 +32,16 @@ namespace CBook.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public PartialViewResult SachGiaoDucPartialView()
+        {
+           
+            
+                var lstSachGiaoDuc = db.Hangs.Take(100).Where(x => x.MaLoai ==1).ToList();
+                return PartialView(lstSachGiaoDuc);
+            
+
         }
     }
 }
