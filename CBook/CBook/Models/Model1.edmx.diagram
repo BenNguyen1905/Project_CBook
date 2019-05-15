@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9bb39e1e3b9e4efbb86d8e2f37f8f1f6" Name="Diagram1" ZoomLevel="42">
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.CTHoaDon" Width="1.5" PointX="3" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.District" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.GioHang" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.Hang" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.HoaDon" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.Loai" Width="1.5" PointX="1.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.Province" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.Quyen" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.TaiKhoan" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.ThuongHieu" Width="1.5" PointX="1.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Cbook_DatabaseModel.Ward" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_CTHoaDon_Hang" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_CTHoaDon_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_GioHang_CTHoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_TaiKhoan_District" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_GioHang_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_Hang_Loai" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_Hang_ThuongHieu" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_TaiKhoan_Province" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_TaiKhoan_Quyen" ManuallyRouted="false" />
+        <AssociationConnector Association="Cbook_DatabaseModel.FK_TaiKhoan_Ward" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
