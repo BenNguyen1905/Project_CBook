@@ -2,7 +2,7 @@
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace CBook
+namespace CBook.App_Start
 {
     public class MvcApplication : System.Web.HttpApplication
     {
