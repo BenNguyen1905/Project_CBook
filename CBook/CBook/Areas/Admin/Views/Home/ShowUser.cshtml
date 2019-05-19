@@ -40,7 +40,7 @@
                     @Html.DisplayFor(modelItem => item.NgayTao)
                 </td>
                 <td>
-                    <a href="#" class="btn-active" data-id="@item.MaKH">@Html.Raw(item.TrangThai ? "<strong>Kích hoạt</strong>" : "Khoá")</a>
+                    <a href="#" class="btn-active" data-id="@item.MaKH">@Html.Raw((bool)item.TrangThai ? "<strong>Kích hoạt</strong>" : "Khoá")</a>
                 </td>
                 <td>
                     @Html.ActionLink("Xem", "DetailsUser", new { id = item.MaKH }) |
