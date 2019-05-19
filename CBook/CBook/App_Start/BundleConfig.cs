@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace CBook.App_Start
+namespace CBook
 {
     public class BundleConfig
     {
