@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace CBook.App_Start
+namespace CBook
 {
-    public class RouteConfig : Controller
+    public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
@@ -17,7 +17,7 @@ namespace CBook.App_Start
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] { "Project8.Controllers" }
+                namespaces: new[] { "CBook.Controllers" }
             );
         }
     }
