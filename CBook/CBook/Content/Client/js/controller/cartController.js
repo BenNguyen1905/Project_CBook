@@ -16,7 +16,7 @@
             });
 
             $.ajax({
-                url: '/Cart/Update',
+                url: '~/Cart/Update',
                 data: { cartModel: JSON.stringify(cartList) },
                 dataType: 'json',
                 type: 'POST',
@@ -30,7 +30,7 @@
 
         $('#btnDeleteAll').off('click').on('click', function () {
             $.ajax({
-                url: '/Cart/DeleteAll',
+                url: '~/Cart/DeleteAll',
                 dataType: 'json',
                 type: 'POST',
                 success: function (res) {
@@ -44,12 +44,12 @@
         $('#btnDelete').off('click').on('click', function () {
             $.ajax({
                 data: { id: $(this).data('id') },
-                url: '/Cart/Delete',
+                url: '~/Cart/Delete',
                 dataType: 'json',
                 type: 'POST',
                 success: function (res) {
                     if (res.status == true) {
-                        window.location.href = "/Cart";
+                        window.location.href = "~/Cart";
                     }
                 }
             })
