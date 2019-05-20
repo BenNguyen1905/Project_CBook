@@ -350,7 +350,7 @@ namespace CBook.Models.Process
         /// <returns>List</returns>
         public List<Sach> ListAllBook()
         {
-            return db.Saches.OrderBy(x => x.MaSach).ToList();
+            return db.Saches.OrderByDescending(x => x.NgayCapNhat).ToList();
         }
 
         /// <summary>
@@ -383,7 +383,7 @@ namespace CBook.Models.Process
                 sach.Mota = entity.Mota;
                 sach.NguoiDich = entity.NguoiDich;
                 sach.AnhBia = entity.AnhBia;
-                sach.NgayCapNhat = entity.NgayCapNhat;
+                sach.NgayCapNhat = /*entity.NgayCapNhat*/DateTime.Now;
                 sach.SoLuongTon = entity.SoLuongTon;
                 db.SaveChanges();
                 return 1;
