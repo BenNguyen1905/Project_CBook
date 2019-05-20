@@ -34,13 +34,14 @@
 
     <!-- Navigation -->
     <div class="top-container">
-        <h1>CBook Store</h1>
+        <a href="/" style="text-decoration: none; color: #393e46"><h1>CBook Store</h1></a>
         <center>
-            <i style="font-size: 40px" class="fas fa-book-open"></i></center>
-    @*<a href="/" style="font-size:25px;"><i class="fas fa-book-open" aria-hidden="true"></i>fdđ</a>*@
+            <i style="font-size: 40px; color:#393e46" class="fas fa-book-open"></i>
+        </center>
+        @*<a href="/" style="font-size:25px;"><i class="fas fa-book-open" aria-hidden="true"></i>fdđ</a>*@
 
-    @*<p>Scroll down to see the sticky effect.</p>*@
-</div>
+        @*<p>Scroll down to see the sticky effect.</p>*@
+    </div>
     <nav style="background-color: #222831" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
         <div class="container">
@@ -68,11 +69,10 @@
                     @using (Html.BeginForm("SearchResult", "Home", FormMethod.Post, new { @class = "navbar-form", @role = "search" }))
                     {
                         <div class="input-group">
-                            @*<input style="width: 370px;" type="text" class="form-control" placeholder="Tìm kiếm sách..." name="search">*@
                             @Html.TextBox("txtSearch", "", htmlAttributes: new { @class = "form-control", @placeholder = "Tìm kiếm sách...", @style = "width: 370px" })
                             <span class="input-group-btn">
-                                <button style="background: #087BE1;" class="btn btn-default" type="submit">
-                                    <span style="color:white">Tìm</span>
+                                <button @*style="background: #087BE1;"*@ class="btn btn-default" type="submit">
+                                    @*<span style="color:white">Tìm</span>*@<i class="fal fa-search"></i>
                                 </button>
                             </span>
                         </div>

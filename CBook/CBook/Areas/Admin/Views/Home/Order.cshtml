@@ -46,7 +46,7 @@
                     @Html.DisplayFor(modelItem => item.NgayGiao)
                 </td>
                 <td>
-                    <a href="#">@(item.TinhTrang ? "Chưa giao" : "Đã giao")</a>
+                    <a href="#">@((bool)item.TinhTrang ? "Chưa giao" : "Đã giao")</a>
                 </td>
                 <td>
                     @Html.ActionLink("Xem", "DetailsOrder", new { id = item.MaDDH })
