@@ -482,5 +482,21 @@ namespace CBook.Models.Process
             }
         }
 
+        //Hàm xóa đơn hàng
+        public bool DeleteOrder(int id)
+        {
+            try
+            {
+                var order = db.DonDatHangs.Find(id);
+                db.DonDatHangs.Remove(order);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }

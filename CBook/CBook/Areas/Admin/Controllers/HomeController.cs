@@ -587,6 +587,13 @@ namespace CBook.Areas.Admin.Controllers
             return View(result);
         }
 
+        [HttpDelete]
+        public ActionResult DeleteOrder(int id)
+        {
+            new AdminProcess().DeleteOrder(id);
+            return RedirectToAction("Order");
+        }
+
         #endregion
 
     }
