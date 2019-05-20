@@ -22,7 +22,7 @@
                 type: 'POST',
                 success: function (res) {
                     if (res.status == true) {
-                        window.location.href = "/Cart";
+                        window.location.href = "~/Cart";
                     }
                 }
             })
@@ -35,7 +35,7 @@
                 type: 'POST',
                 success: function (res) {
                     if (res.status == true) {
-                        window.location.href = "/Cart";
+                        window.location.href = "~/Cart";
                     }
                 }
             })
