@@ -350,7 +350,7 @@ namespace CBook.Models.Process
         /// <returns>List</returns>
         public List<Sach> ListAllBook()
         {
-            return db.Saches.OrderBy(x => x.MaSach).ToList();
+            return db.Saches.OrderByDescending(x => x.NgayCapNhat).ToList();
         }
 
         /// <summary>
