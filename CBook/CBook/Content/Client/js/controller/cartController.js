@@ -35,7 +35,7 @@
                 type: 'POST',
                 success: function (res) {
                     if (res.status == true) {
-                        window.location.href = "/Cart" /*"/CsK23T1c/Cart"*/; /*upload len web la chinh lai*/
+                        window.location.href = "/Cart"  /*"/CsK23T1c/Cart"*/; /*upload len web la chinh lai*/
                     }
                 }
             })
