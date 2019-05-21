@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using CBook.Models;
+using System.Data.SqlClient;
 
 namespace CBook.Models.Process
 {
@@ -11,11 +12,14 @@ namespace CBook.Models.Process
         //Tầng xử lý dữ liệu
 
         CsK23T1cEntities db = null;
+        SqlConnection sql = new SqlConnection("data source=tuleap.vanlanguni.edu.vn,18082;initial catalog=CsK23T1c;user id=csk23t1c;password=lightgorilla;MultipleActiveResultSets=True;App=EntityFramework&quot;");
+
 
         //constructor
         public AdminProcess()
         {
             db = new CsK23T1cEntities();
+            
         }
 
         /// <summary>
@@ -487,9 +491,16 @@ namespace CBook.Models.Process
         {
             try
             {
-                var order = db.DonDatHangs.Find(id);
-                db.DonDatHangs.Remove(order);
-                db.SaveChanges();
+                string lenh = "Delete from ChitietDDH where MaDDH="+id;
+                string lenh1= "Delete from DonDatHang where MaDDH=" + id;
+                SqlCommand bo_lenh = new SqlCommand(lenh, sql);
+                SqlCommand bo_lenh1 = new SqlCommand(lenh1, sql);
+                sql.Open();
+                bo_lenh.ExecuteNonQuery();
+                bo_lenh.Dispose();
+                bo_lenh1.ExecuteNonQuery();
+                bo_lenh1.Dispose();
+                sql.Close();
                 return true;
             }
             catch (Exception)
