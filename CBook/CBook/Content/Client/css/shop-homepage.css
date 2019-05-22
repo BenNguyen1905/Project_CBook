@@ -14,8 +14,15 @@ body {
     width: 100%;
 }
 .top-container {
-    background-color: #d65a31 ;
+    /*background-color: #d65a31 ;*/
+    background-color: #bad0b8;
+    background-image: -webkit-linear-gradient(right, #FC7864, #FDA366);
+    background-image: -moz-linear-gradient(right, #FC7864, #FDA366);
+    background-image: -o-linear-gradient(right, #FC7864, #FDA366);
+    background-image: -ms-linear-gradient(right, #FC7864, #FDA366);
+    background-image: linear-gradient(right, #FC7864, #FDA366);
     padding: 30px;
+
 }
     .top-container h1 {
         font-family: 'Fredoka One', cursive;
@@ -44,6 +51,10 @@ body {
     height: 250px;
 }
 
+.bs-example-navbar-collapse-1{
+
+}
+
 .thumbnail img {
     width: 180px;
     height: 240px;
@@ -68,9 +79,9 @@ footer {
     margin: 50px 0;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: #ffffff;
-    font-size: 18px;
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: white;
+    color:black
 }
 
 .navbar-inverse {
@@ -80,7 +91,17 @@ footer {
 }
 
 
-.col-md-3 .list-group a {
-    border: 1px solid black;
+.col-md-3 .list group a{
+    border: 10px solid black;
+   
     color: #000;
+}
+.col-md-3 .text-links categories-content metro-dropdown-menu{
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.col-md-3 .text-links categories-content metro-dropdown-menu:hover {
+    width: 100%;
 }
