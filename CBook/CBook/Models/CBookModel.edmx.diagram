@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bf1e4c08e42748c5b487743ce8127e49" Name="Diagram1">
+        <EntityTypeShape EntityType="CsK23T1cModel.Admin" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.ChiTietDDH" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.DonDatHang" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.KhachHang" Width="1.5" PointX="0.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.LienHe" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.NhaXuatBan" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.Sach" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.sysdiagram" Width="1.5" PointX="6.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.TacGia" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CsK23T1cModel.TheLoai" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <AssociationConnector Association="CsK23T1cModel.FK__ChiTietDD__MaDDH__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="CsK23T1cModel.FK__ChiTietDD__MaSac__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="CsK23T1cModel.FK__DonDatHang__MaKH__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="CsK23T1cModel.FK__Sach__MaNXB__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="CsK23T1cModel.FK__Sach__MaLoai__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="CsK23T1cModel.FK__Sach__MaTG__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
