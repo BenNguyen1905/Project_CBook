@@ -10,23 +10,20 @@
     <title>CBook Store</title>
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="/Content/Client/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="/Content/Client/css/shop-homepage.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/shop-homepage.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    @*<link href="/Content/Client/css/font-awesome.min.css"  rel="stylesheet" />*@
     <link href="~/Content/fontawesome-5.8.2/css/all.css" rel="stylesheet" >
-    @*<link href="~/Content/font-awesome-4.6.3/css/all.min.css" rel="stylesheet"  />*@
-    @*<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">*@
     @*DataTables*@
-    <link href="/Content/Client/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/jquery.dataTables.min.css" rel="stylesheet" />
     @*!DataTables*@
-    <link href="/Content/Client/css/footer.css" rel="stylesheet" />
+    <link href="~/Content/Client/css/footer.css" rel="stylesheet" />
 </head>
 <body>
   
@@ -34,13 +31,14 @@
 
     <!-- Navigation -->
     <div class="top-container">
-        <h1>CBook Store</h1>
+        <a href="~/" style="text-decoration: none; color: #393e46"><h1>CBook Store</h1></a>
         <center>
-            <i style="font-size: 40px" class="fas fa-book-open"></i></center>
-    @*<a href="/" style="font-size:25px;"><i class="fas fa-book-open" aria-hidden="true"></i>fdđ</a>*@
+            <i style="font-size: 40px; color:#393e46" class="fas fa-book-open"></i>
+        </center>
+        @*<a href="/" style="font-size:25px;"><i class="fas fa-book-open" aria-hidden="true"></i>fdđ</a>*@
 
-    @*<p>Scroll down to see the sticky effect.</p>*@
-</div>
+        @*<p>Scroll down to see the sticky effect.</p>*@
+    </div>
     <nav style="background-color: #222831" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
         <div class="container">
@@ -57,22 +55,21 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/" style="font-size:25px;"><i class="fa fa-home" aria-hidden="true"></i> Trang Chủ</a>
+                        <a href="~/" style="font-size:25px;"><i class="fa fa-home" aria-hidden="true"></i> Trang Chủ</a>
                     </li>
 
                     <li>
-                        <a href="/Home/Contact"><i class="fa fa-phone-square" aria-hidden="true"></i> Liên hệ</a>
+                        <a href="~/Home/Contact"><i class="fa fa-phone-square" aria-hidden="true"></i> Liên hệ</a>
                     </li>
                 </ul>
                 <div class="col-sm-3 col-md-3">
                     @using (Html.BeginForm("SearchResult", "Home", FormMethod.Post, new { @class = "navbar-form", @role = "search" }))
                     {
                         <div class="input-group">
-                            @*<input style="width: 370px;" type="text" class="form-control" placeholder="Tìm kiếm sách..." name="search">*@
                             @Html.TextBox("txtSearch", "", htmlAttributes: new { @class = "form-control", @placeholder = "Tìm kiếm sách...", @style = "width: 370px" })
                             <span class="input-group-btn">
-                                <button style="background: #087BE1;" class="btn btn-default" type="submit">
-                                    <span style="color:white">Tìm</span>
+                                <button @*style="background: #087BE1;"*@ class="btn btn-default" type="submit">
+                                    @*<span style="color:white">Tìm</span>*@<i class="fal fa-search"></i>
                                 </button>
                             </span>
                         </div>
@@ -107,22 +104,22 @@
                         <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                             <h3> Trợ giúp </h3>
                             <ul>
-                                <li> <a href="/Home/QuyDinh"> Qui định sử dụng </a> </li>
-                                <li> <a href="/Home/Thanhtoan"> Phương thức thanh toán </a> </li>
-                                <li> <a href="/Home/VanChuyen"> Phương thức vận chuyển </a> </li>
+                                <li> <a href="~/Home/QuyDinh"> Qui định sử dụng </a> </li>
+                                <li> <a href="~/Home/Thanhtoan"> Phương thức thanh toán </a> </li>
+                                <li> <a href="~/Home/VanChuyen"> Phương thức vận chuyển </a> </li>
                             </ul>
                         </div>
                         <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                             <h3> Hỗ trợ </h3>
                             <ul>
-                                <li> <a href="/Home/DoiTra"> Chính sách đổi trả </a> </li>
-                                <li> <a href="/Home/Help"> Các câu hỏi thường gặp </a> </li>
+                                <li> <a href="~/Home/DoiTra"> Chính sách đổi trả </a> </li>
+                                <li> <a href="~/Home/Help"> Các câu hỏi thường gặp </a> </li>
                             </ul>
                         </div>
                         <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                             <h3> Tài khoản </h3>
                             <ul>
-                                <li> <a href="/User/Register"> Đăng ký thành viên</a> </li>
+                                <li> <a href="~/User/Register"> Đăng ký thành viên</a> </li>
                             </ul>
                         </div>
 
@@ -167,12 +164,12 @@
     </div>
     <!-- /.container -->
     <!-- jQuery -->
-    <script src="/Content/Client/js/jquery.js"></script>
+    <script src="~/Content/Client/js/jquery.js"></script>
     @*DataTables*@
-    <script src="/Content/Client/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/Client/js/jquery.dataTables.min.js"></script>
     @*!DataTables*@
     <!-- Bootstrap Core JavaScript -->
-    <script src="/Content/Client/js/bootstrap.min.js"></script>
+    <script src="~/Content/Client/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#thongBaoThanhCong').delay(3000).slideUp();

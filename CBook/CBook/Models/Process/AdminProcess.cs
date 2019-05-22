@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using CBook.Models;
+using System.Data.SqlClient;
 
 namespace CBook.Models.Process
 {
@@ -11,11 +12,14 @@ namespace CBook.Models.Process
         //Tầng xử lý dữ liệu
 
         CsK23T1cEntities db = null;
+        SqlConnection sql = new SqlConnection("data source=tuleap.vanlanguni.edu.vn,18082;initial catalog=CsK23T1c;user id=csk23t1c;password=lightgorilla;MultipleActiveResultSets=True;App=EntityFramework&quot;");
+
 
         //constructor
         public AdminProcess()
         {
             db = new CsK23T1cEntities();
+            
         }
 
         /// <summary>
@@ -350,7 +354,7 @@ namespace CBook.Models.Process
         /// <returns>List</returns>
         public List<Sach> ListAllBook()
         {
-            return db.Saches.OrderBy(x => x.MaSach).ToList();
+            return db.Saches.OrderByDescending(x => x.NgayCapNhat).ToList();
         }
 
         /// <summary>
@@ -383,7 +387,7 @@ namespace CBook.Models.Process
                 sach.Mota = entity.Mota;
                 sach.NguoiDich = entity.NguoiDich;
                 sach.AnhBia = entity.AnhBia;
-                sach.NgayCapNhat = entity.NgayCapNhat;
+                sach.NgayCapNhat = /*entity.NgayCapNhat*/DateTime.Now;
                 sach.SoLuongTon = entity.SoLuongTon;
                 db.SaveChanges();
                 return 1;
@@ -474,6 +478,29 @@ namespace CBook.Models.Process
                 var user = db.KhachHangs.Find(id);
                 db.KhachHangs.Remove(user);
                 db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        //Hàm xóa đơn hàng
+        public bool DeleteOrder(int id)
+        {
+            try
+            {
+                string lenh = "Delete from ChitietDDH where MaDDH="+id;
+                string lenh1= "Delete from DonDatHang where MaDDH=" + id;
+                SqlCommand bo_lenh = new SqlCommand(lenh, sql);
+                SqlCommand bo_lenh1 = new SqlCommand(lenh1, sql);
+                sql.Open();
+                bo_lenh.ExecuteNonQuery();
+                bo_lenh.Dispose();
+                bo_lenh1.ExecuteNonQuery();
+                bo_lenh1.Dispose();
+                sql.Close();
                 return true;
             }
             catch (Exception)
