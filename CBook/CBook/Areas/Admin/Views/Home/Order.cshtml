@@ -46,10 +46,17 @@
                     @Html.DisplayFor(modelItem => item.NgayGiao)
                 </td>
                 <td>
-                    <a href="#">@(item.TinhTrang ? "Chưa giao" : "Đã giao")</a>
+                    <a href="#">@((bool)item.TinhTrang ? "Chưa giao" : "Đã giao")</a>
                 </td>
                 <td>
                     @Html.ActionLink("Xem", "DetailsOrder", new { id = item.MaDDH })
+                    <span>|</span>
+                    @Ajax.ActionLink("Xóa", "DeleteOrder", new { id = item.MaDDH }, new AjaxOptions
+               {
+                   Confirm = "Bạn có muốn xóa đơn hàng này không?",
+                   OnComplete = "$('#row_" + @item.MaDDH + "').remove()",
+                   HttpMethod = "Delete"
+               })
                 </td>
             </tr>
         }
