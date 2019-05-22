@@ -84,3 +84,20 @@ footer {
     border: 1px solid black;
     color: #000;
 }
+.col-md-3 .list-group-item {
+    background-repeat: no-repeat;
+   
+}
+    .col-md-3 .list-group-item:hover {
+        /*display: block;*/
+        /*color: #fff;*/
+        /*background-color: #fff;*/
+        background-color: #ed7c09;
+        background-size: 100% 100%;
+        color: #fff;
+        margin: 2px 0 0 2px;
+        /*box-shadow: 4px 5px 27px 4px rgba(220, 120, 184, 0.85);*/
+        /*font-size: 20px;*/
+        /*border-radius: 100px;*/
+        /*padding: 12px 21px;*/
+    }
