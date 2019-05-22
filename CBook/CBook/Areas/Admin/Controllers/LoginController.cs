@@ -57,7 +57,7 @@ namespace CBook.Areas.Admin.Controllers
             Session["LoginAdmin"] = null;
 
             //trả về trang đăng nhập
-            return Redirect("/Admin/Login");
+            return Redirect("~/Admin/Login");
         }
 
         //POST : /Admin/Login/Index : thực hiện việc đăng nhập người quản lý

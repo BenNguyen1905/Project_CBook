@@ -227,10 +227,10 @@ namespace CBook.Controllers
             }
             catch (Exception)
             {
-                return Redirect("/Cart/Error");
+                return Redirect("~/Cart/Error");
             }
 
-            return Redirect("/Cart/Success");
+            return Redirect("~/Cart/Success");
         }
 
         public ActionResult Success()

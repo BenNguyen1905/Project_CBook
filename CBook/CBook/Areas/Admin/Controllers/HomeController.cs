@@ -68,7 +68,7 @@ namespace CBook.Areas.Admin.Controllers
                     //lấy file đường dẫn
                     var fileName = Path.GetFileName(fileUpload.FileName);
                     //chuyển file đường dẫn và biên dịch vào /images
-                    var path = Path.Combine(Server.MapPath("/images"), fileName);
+                    var path = Path.Combine(Server.MapPath("~/images"), fileName);
 
                     //kiểm tra đường dẫn ảnh có tồn tại?
                     if (System.IO.File.Exists(path))
@@ -158,7 +158,7 @@ namespace CBook.Areas.Admin.Controllers
                 if (ModelState.IsValid)
                 {
                     var fileName = Path.GetFileName(fileUpload.FileName);
-                    var path = Path.Combine(Server.MapPath("/images"), fileName);
+                    var path = Path.Combine(Server.MapPath("~/images"), fileName);
 
                     if (System.IO.File.Exists(path))
                     {
