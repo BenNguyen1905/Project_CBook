@@ -18,13 +18,21 @@ namespace CBook.Models.Process
         }
 
         /// <summary>
-       
+
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-    
+        public DonDatHang GetIdOrder(int id)
+        {
+            return db.DonDatHangs.Find(id);
+        }
+
+
+
+
+
         /// <summary>
-        
+
         /// </summary>
         /// <returns>List</returns>
         public List<DonDatHang> ListOrder()
