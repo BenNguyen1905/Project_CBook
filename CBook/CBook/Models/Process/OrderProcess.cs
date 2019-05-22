@@ -18,7 +18,7 @@ namespace CBook.Models.Process
         }
 
         /// <summary>
-        /// hàm lấy mã đơn đặt hàng
+       
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -28,7 +28,7 @@ namespace CBook.Models.Process
         }
 
         /// <summary>
-        /// hàm xuất danh sách đơn đặt hàng
+        
         /// </summary>
         /// <returns>List</returns>
         public List<DonDatHang> ListOrder()
