@@ -22,11 +22,7 @@ namespace CBook.Models.Process
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public DonDatHang GetIdOrder(int id)
-        {
-            return db.DonDatHangs.Find(id);
-        }
-
+    
         /// <summary>
         
         /// </summary>
