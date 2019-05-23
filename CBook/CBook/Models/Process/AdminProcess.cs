@@ -13,13 +13,12 @@ namespace CBook.Models.Process
 
         CsK23T1cEntities db = null;
         SqlConnection sql = new SqlConnection("data source=tuleap.vanlanguni.edu.vn,18082;initial catalog=CsK23T1c;user id=csk23t1c;password=lightgorilla;MultipleActiveResultSets=True;App=EntityFramework&quot;");
-
+        
 
         //constructor
         public AdminProcess()
         {
             db = new CsK23T1cEntities();
-            
         }
 
         /// <summary>
@@ -387,7 +386,7 @@ namespace CBook.Models.Process
                 sach.Mota = entity.Mota;
                 sach.NguoiDich = entity.NguoiDich;
                 sach.AnhBia = entity.AnhBia;
-                sach.NgayCapNhat = /*entity.NgayCapNhat*/DateTime.Now;
+                sach.NgayCapNhat = /*entity.NgayCapNhat*/ DateTime.Now;
                 sach.SoLuongTon = entity.SoLuongTon;
                 db.SaveChanges();
                 return 1;
@@ -486,13 +485,12 @@ namespace CBook.Models.Process
             }
         }
 
-        //Hàm xóa đơn hàng
         public bool DeleteOrder(int id)
         {
             try
             {
-                string lenh = "Delete from ChitietDDH where MaDDH="+id;
-                string lenh1= "Delete from DonDatHang where MaDDH=" + id;
+                string lenh = "Delete from ChitietDDH where MaDDH=" + id;
+                string lenh1 = "Delete from DonDatHang where MaDDH=" + id;
                 SqlCommand bo_lenh = new SqlCommand(lenh, sql);
                 SqlCommand bo_lenh1 = new SqlCommand(lenh1, sql);
                 sql.Open();
@@ -505,6 +503,7 @@ namespace CBook.Models.Process
             }
             catch (Exception)
             {
+
                 return false;
             }
         }

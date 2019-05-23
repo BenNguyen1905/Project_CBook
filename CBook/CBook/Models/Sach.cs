@@ -62,8 +62,6 @@ namespace CBook.Models
         [Display(Name = "Ngày cập nhật")]
         public Nullable<System.DateTime> NgayCapNhat { get; set; } = DateTime.Now;
 
-
-
         [Display(Name = "Số lượng tồn")]
         public Nullable<int> SoLuongTon { get; set; }
     

@@ -38,12 +38,15 @@
         </li>
 
         @Html.Action("CartHeader", "Cart")
+        <li>
+            <a href="~/Home/Contact"><i class="fa fa-phone-square" aria-hidden="true"></i> Liên hệ</a>
+        </li>
     }
     else
     {
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                <i class="fa fa-user-o" aria-hidden="true"></i> Tài Khoản : @Session["User"] <i class="fa fa-caret-down"></i>
+                <i class="fa fa-user-o" aria-hidden="true"></i> Xin chào, @Session["User"] <i class="fa fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-user">
                 <li>
@@ -57,7 +60,9 @@
             <!-- /.dropdown-user -->
         </li>
         @Html.Action("CartHeader", "Cart")
+        <li>
+            <a href="~/Home/Contact"><i class="fa fa-phone-square" aria-hidden="true"></i> Liên hệ</a>
+        </li>
     }
-
 </ul>
 

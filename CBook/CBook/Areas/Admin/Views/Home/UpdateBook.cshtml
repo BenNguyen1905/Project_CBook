@@ -29,13 +29,13 @@
             </div>
         </div>
 
-        @*<div class="form-group">
+        <div class="form-group">
             <label class="control-label col-md-2">Loại</label>
             <div class="col-md-10">
                 @Html.DropDownList("MaLoai", null, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.MaLoai, "", new { @class = "text-danger" })
             </div>
-        </div>*@
+        </div>
 
         <div class="form-group">
             <label class="control-label col-md-2">Nhà xuất bản</label>
@@ -87,13 +87,13 @@
             </div>
         </div>
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.NgayCapNhat, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.NgayCapNhat, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.NgayCapNhat, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
 
         <div class="form-group">
             @Html.LabelFor(model => model.SoLuongTon, htmlAttributes: new { @class = "control-label col-md-2" })
