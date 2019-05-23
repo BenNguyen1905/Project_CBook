@@ -193,6 +193,7 @@ namespace CBook.Controllers
 
         //POST : /User/EditUser : thực hiện việc cập nhật thông tin khách hàng
         [HttpPost]
+       
         public ActionResult EditUser(KhachHang model)
         {
             if (ModelState.IsValid)
