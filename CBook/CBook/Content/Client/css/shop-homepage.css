@@ -86,18 +86,21 @@ footer {
 }
 .col-md-3 .list-group-item {
     background-repeat: no-repeat;
-   
+    background: linear-gradient(to right, violet 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-transition: all, .4s ease-in-out;
+    -moz-transition: all, .4s ease-in-out;
+    -o-transition: all, .4s ease-in-out;
+    color: #070707;
 }
     .col-md-3 .list-group-item:hover {
         /*display: block;*/
-        /*color: #fff;*/
-        /*background-color: #fff;*/
-        background-color: #ed7c09;
-        background-size: 100% 100%;
-        color: #fff;
+        color: white;
+        background-position: left bottom;
+        -o-transition-timing-function: cubic-bezier(0.5,1.88,0.3,.38);
+        -moz-transition-timing-function: cubic-bezier(0.5,1.88,0.3,.38);
+        -webkit-transition-timing-function: cubic-bezier(0.5,1.88,0.3,.38);
+        background-size: 200% 100%;
         margin: 2px 0 0 2px;
-        /*box-shadow: 4px 5px 27px 4px rgba(220, 120, 184, 0.85);*/
-        /*font-size: 20px;*/
-        /*border-radius: 100px;*/
-        /*padding: 12px 21px;*/
     }
