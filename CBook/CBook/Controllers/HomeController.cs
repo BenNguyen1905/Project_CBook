@@ -100,12 +100,7 @@ namespace CBook.Controllers
                 //gọi hàm lưu thông tin phản hồi từ khách hàng
                 var result = home.InsertContact(lh);
 
-                if (result > 0)
-                {
-                    ViewBag.success = "Đã ghi nhận phản hồi của bạn";
-                    ModelState.Clear();
-                    return View();
-                }
+                
                 else
                 {
                     ModelState.AddModelError("", "Lỗi ghi nhận");
