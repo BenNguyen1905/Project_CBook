@@ -485,28 +485,7 @@ namespace CBook.Models.Process
             }
         }
 
-        public bool DeleteOrder(int id)
-        {
-            try
-            {
-                string lenh = "Delete from ChitietDDH where MaDDH=" + id;
-                string lenh1 = "Delete from DonDatHang where MaDDH=" + id;
-                SqlCommand bo_lenh = new SqlCommand(lenh, sql);
-                SqlCommand bo_lenh1 = new SqlCommand(lenh1, sql);
-                sql.Open();
-                bo_lenh.ExecuteNonQuery();
-                bo_lenh.Dispose();
-                bo_lenh1.ExecuteNonQuery();
-                bo_lenh1.Dispose();
-                sql.Close();
-                return true;
-            }
-            catch (Exception)
-            {
 
-                return false;
-            }
-        }
 
     }
 }
