@@ -44,10 +44,7 @@ namespace CBook.Models.Process
         /// </summary>
         /// <param name="key">string</param>
         /// <returns>List</returns>
-        public List<Sach> Search(string key)
-        {
-            return db.Saches.Where(x => x.TenSach.Contains(key)).OrderBy(x=>x.TenSach).ToList();
-        }
+        
 
     }
 }
