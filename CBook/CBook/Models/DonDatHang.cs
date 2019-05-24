@@ -34,6 +34,12 @@ namespace CBook.Models
         [Display(Name = "Ngày giao")]
         public Nullable<System.DateTime> NgayGiao { get; set; }
 
-        
+        [Display(Name = "Tình trạng")]
+        public Nullable<bool> TinhTrang { get; set; }
+        public int MaKH { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietDDH> ChiTietDDHs { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
     }
 }
