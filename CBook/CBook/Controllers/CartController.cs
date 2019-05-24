@@ -50,7 +50,19 @@ namespace CBook.Controllers
         }
 
         //Xóa 1 sản phẩm trong giỏ hàng
-        
+        public JsonResult Delete(int id)
+        {
+            var sessionCart = (List<CartModel>)Session[CartSession];
+            //xóa những giá trị mà có mã sách giống với id
+            sessionCart.RemoveAll(x => x.sach.MaSach == id);
+            //gán lại giá trị cho session
+            Session[CartSession] = sessionCart;
+
+            return Json(new
+            {
+                status = true
+            });
+        }
 
         //Xóa tất cả các sản phẩm trong giỏ hàng
         public JsonResult DeleteAll()
