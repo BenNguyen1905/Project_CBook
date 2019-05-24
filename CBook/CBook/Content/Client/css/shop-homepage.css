@@ -7,14 +7,14 @@
 body {
     padding: 0; /*Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes.*/
     /*background-color: #393e46;*/
-    
 }
 
 .slide-image {
     width: 100%;
 }
+
 .top-container {
-    /*background-color: #d65a31 ;*/
+    /*background-color: #d65a31;*/
     background-color: #bad0b8;
     background-image: -webkit-linear-gradient(right, #FC7864, #FDA366);
     background-image: -moz-linear-gradient(right, #FC7864, #FDA366);
@@ -22,8 +22,8 @@ body {
     background-image: -ms-linear-gradient(right, #FC7864, #FDA366);
     background-image: linear-gradient(right, #FC7864, #FDA366);
     padding: 30px;
-
 }
+
     .top-container h1 {
         font-family: 'Fredoka One', cursive;
         text-align: center;
@@ -43,16 +43,12 @@ body {
     overflow: hidden;
 }
 
-.caption h4 {
-    white-space: nowrap;
-}
+    .caption h4 {
+        white-space: nowrap;
+    }
 
-.thumbnail a>img{
+.thumbnail a > img {
     height: 250px;
-}
-
-.bs-example-navbar-collapse-1{
-
 }
 
 .thumbnail img {
@@ -70,38 +66,53 @@ body {
     padding: 0;
 }
 
-.thumbnail .caption-full {
-    padding: 9px;
-    color: #333;
-}
+    .thumbnail .caption-full {
+        padding: 9px;
+        color: #333;
+    }
 
 footer {
     margin: 50px 0;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
+    /*color: #ffffff;
+    font-size: 18px;*/
     background-color: white;
-    color:black
+    color: black;
 }
 
 .navbar-inverse {
     background-color: #333;
-    position:sticky;
-    padding:0;
+    position: sticky;
+    padding: 0;
 }
 
 
-.col-md-3 .list group a{
-    border: 10px solid black;
-   
+.col-md-3 .list-group a {
+    border: 1px solid black;
     color: #000;
 }
-.col-md-3 .text-links categories-content metro-dropdown-menu{
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 0;
+
+.col-md-3 .list-group-item {
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #fcac55 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-transition: all, .4s ease-in-out;
+    -moz-transition: all, .4s ease-in-out;
+    -o-transition: all, .4s ease-in-out;
+    color: #070707;
 }
-.col-md-3 .text-links categories-content metro-dropdown-menu:hover {
-    width: 100%;
+
+.col-md-3 .list-group-item:hover {
+        /*display: block;*/
+      color: white;
+      background-position: left bottom;
+      -o-transition-timing-function: cubic-bezier(0.5,1.88,0.3,.38);
+      -moz-transition-timing-function: cubic-bezier(0.5,1.88,0.3,.38);
+      -webkit-transition-timing-function: cubic-bezier(0.5,1.88,0.3,.38);
+      background-size: 200% 100%;
+      margin: 2px 0 0 2px;
+
 }

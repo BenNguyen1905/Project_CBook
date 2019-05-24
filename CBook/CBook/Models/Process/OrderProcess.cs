@@ -47,7 +47,5 @@ namespace CBook.Models.Process
             db.SaveChanges();
             return order.MaDDH;
         }
-
-        
     }
 }

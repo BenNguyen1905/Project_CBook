@@ -587,13 +587,13 @@ namespace CBook.Areas.Admin.Controllers
             return View(result);
         }
 
+        //Xóa đơn hàng
         [HttpDelete]
         public ActionResult DeleteOrder(int id)
         {
             new AdminProcess().DeleteOrder(id);
             return RedirectToAction("Order");
         }
-
         #endregion
 
     }

@@ -229,8 +229,10 @@ namespace CBook.Controllers
             {
                 return Redirect("~/Cart/Error");
             }
-
+            Session[CartSession] = null;
             return Redirect("~/Cart/Success");
+            
+            
         }
 
         public ActionResult Success()
