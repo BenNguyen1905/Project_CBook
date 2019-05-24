@@ -90,7 +90,12 @@ namespace CBook.Controllers
                 var lh = new LienHe();
 
                 //gán dữ liệu từ client vào model
-               
+                lh.Ten = model.Ten;
+                lh.Ho = model.Ho;
+                lh.Email = model.Email;
+                lh.DienThoai = model.DienThoai;
+                lh.NoiDung = model.NoiDung;
+                lh.NgayCapNhat = DateTime.Now;
 
                 //gọi hàm lưu thông tin phản hồi từ khách hàng
                 var result = home.InsertContact(lh);
