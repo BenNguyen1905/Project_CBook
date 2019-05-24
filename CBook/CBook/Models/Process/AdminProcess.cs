@@ -27,26 +27,7 @@ namespace CBook.Models.Process
         /// <param name="username">string</param>
         /// <param name="password">string</param>
         /// <returns>int</returns>
-        public int Login(string username, string password)
-        {
-            var result = db.Admins.SingleOrDefault(x => x.TaiKhoan == username);
-            if (result == null)
-            {
-                return 0;
-            }
-            else
-            {
-                if (result.MatKhau == password)
-                {
-                    
-                    return 1;
-                }
-                else
-                {
-                    return -1;
-                }
-            }
-        }
+        
 
         //Get ID : lấy mã
 
