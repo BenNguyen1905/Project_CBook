@@ -470,7 +470,20 @@ namespace CBook.Models.Process
         /// </summary>
         /// <param name="id">int</param>
         /// <returns>bool</returns>
-       
+        public bool DeleteUser(int id)
+        {
+            try
+            {
+                var user = db.KhachHangs.Find(id);
+                db.KhachHangs.Remove(user);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         public bool DeleteOrder(int id)
         {
