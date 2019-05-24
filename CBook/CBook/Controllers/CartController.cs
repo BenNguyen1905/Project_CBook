@@ -197,41 +197,7 @@ namespace CBook.Controllers
         }
 
         [HttpPost]
-        public ActionResult Payment(int MaKH)
-        {
-            var order = new DonDatHang();
-            order.NgayDat = DateTime.Now;
-            order.NgayGiao = DateTime.Now.AddDays(3);
-            order.TinhTrang = true; //đã nhận hàng
-            order.MaKH = MaKH;
-
-            try
-            {
-                //thêm dữ liệu vào đơn đặt hàng
-                var result1 = new OrderProcess().Insert(order);
-
-                var cart = (List<CartModel>)Session[CartSession];
-                var result2 = new OderDetailProcess();
-                decimal? total = 0;
-                foreach (var item in cart)
-                {
-                    var orderDetail = new ChiTietDDH();
-                    orderDetail.MaSach = item.sach.MaSach;
-                    orderDetail.MaDDH = result1;
-                    orderDetail.SoLuong = item.Quantity;
-                    orderDetail.DonGia = item.sach.GiaBan;
-                    result2.Insert(orderDetail);
-
-                    total = cart.Sum(x => x.Total);
-                }
-            }
-            catch (Exception)
-            {
-                return Redirect("~/Cart/Error");
-            }
-
-            return Redirect("~/Cart/Success");
-        }
+       
 
         public ActionResult Success()
         {
