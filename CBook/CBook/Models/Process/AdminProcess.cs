@@ -38,7 +38,7 @@ namespace CBook.Models.Process
             {
                 if (result.MatKhau == password)
                 {
-                    
+
                     return 1;
                 }
                 else
@@ -353,7 +353,7 @@ namespace CBook.Models.Process
         /// <returns>List</returns>
         public List<Sach> ListAllBook()
         {
-            return db.Saches.OrderBy(x => x.MaSach).ToList();
+            return db.Saches.OrderByDescending(x => x.NgayCapNhat).ToList();
         }
 
         /// <summary>
@@ -484,7 +484,6 @@ namespace CBook.Models.Process
                 return false;
             }
         }
-
         public bool DeleteOrder(int id)
         {
             try
@@ -507,6 +506,7 @@ namespace CBook.Models.Process
                 return false;
             }
         }
+
 
     }
 }
