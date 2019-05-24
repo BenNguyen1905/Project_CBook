@@ -18,7 +18,22 @@ namespace CBook.Controllers
         private const string CartSession = "CartSession";
 
         // GET: Cart/ : trang giỏ hàng
-       
+        public ActionResult Index()
+        {
+            var cart = Session[CartSession];
+            var list = new List<CartModel>();
+            var sl = 0;
+            decimal? total = 0;
+            if (cart != null)
+            {
+                list = (List<CartModel>)cart;
+                sl = list.Sum(x => x.Quantity);
+                total = list.Sum(x => x.Total);
+            }
+            ViewBag.Quantity = sl;
+            ViewBag.Total = total;
+            return View(list);
+        }
 
         //GET : /Cart/CartHeader : đếm sổ sản phẩm trong giỏ hàng
         //PartialView : CartHeader
