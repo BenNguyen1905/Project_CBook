@@ -11,29 +11,29 @@
     @Html.ActionLink("Thêm sách", "AddBook")
 </p>
 <table class="table" id="myTable">
-    
+    <thead>
         <tr>
-            <th>
+            <th >
                 Mã
             </th>
             <th width="320">
                 Tên Sách
             </th>
-            <th>
+            <th class="no-sort">
                 Ảnh Bìa
             </th>
-            <th>
+            <th class="no-sort">
                 Giá Bán
             </th>
-            <th>
+            <th class="no-sort">
                 Ngày Cập Nhật
             </th>
-            <th>
+            <th class="no-sort">
                 Số Lượng
             </th>
             <th></th>
         </tr>
-    
+    </thead>
     <tbody>
         @foreach (var item in Model)
         {

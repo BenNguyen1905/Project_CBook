@@ -642,6 +642,8 @@
     <Content Include="Content\Admin\bower_components\raphael\license.txt" />
     <Content Include="Content\Admin\bower_components\raphael\raphael-min.js" />
     <Content Include="Content\Admin\bower_components\raphael\raphael.js" />
+    <Content Include="Content\Admin\datatables.min.css" />
+    <Content Include="Content\Admin\datatables.min.js" />
     <Content Include="Content\Admin\dist\css\sb-admin-2.css" />
     <Content Include="Content\Admin\dist\css\timeline.css" />
     <Content Include="Content\Admin\dist\js\sb-admin-2.js" />

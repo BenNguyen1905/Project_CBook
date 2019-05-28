@@ -13,7 +13,7 @@
         <h2>@Model.TenSach</h2>
         <h4 class="muted">Thể loại : @Model.TheLoai.TenLoai - Tác giả: @Model.TacGia.TenTG</h4>
         <p>Nhà xuất bản : @Model.NhaXuatBan.TenNXB</p>
-        <p>@Model.Mota <a href="#">Xem chi tiết</a></p>
+        <p>@Model.Mota</p>
         <hr>
         @if(Model.SoLuongTon > 0)
         {
@@ -25,11 +25,11 @@
         }
         @if (Model.GiaBan >0)
         {
-            <h3>Giá - @Model.GiaBan.Value.ToString("N0") VND</h3>
+            <h3>Giá: @Model.GiaBan.Value.ToString("N0") VND</h3>
         }
         else
         {
-            <h3>Giá - Liên hệ</h3>
+            <h3>Giá: Liên hệ</h3>
         }
         <br>
         <p><a href="~/Cart/AddItem/?id=@Model.MaSach&quantity=1" class="btn btn-warning btn-large">THÊM VÀO GIỎ HÀNG</a></p>
